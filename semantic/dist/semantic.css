@@ -650,12 +650,12 @@ p:last-child {
 --------------------*/
 
 a {
-  color: #1CC886;
+  color: #002B49;
   text-decoration: none;
 }
 
 a:hover {
-  color: #1fde95;
+  color: #003a62;
   text-decoration: none;
 }
 
@@ -13976,7 +13976,7 @@ a.ui.basic.black.label:hover {
 a.ui.basic.label:hover {
   text-decoration: none;
   background: none #FFFFFF;
-  color: #1fde95;
+  color: #003a62;
   -webkit-box-shadow: 1px solid rgba(0, 0, 0, 0.07);
   box-shadow: 1px solid rgba(0, 0, 0, 0.07);
   -webkit-box-shadow: none;
@@ -14446,12 +14446,12 @@ ol.ui.list ol li,
 .ui.list .list > a.item,
 .ui.list > a.item {
   cursor: pointer;
-  color: #1CC886;
+  color: #002B49;
 }
 
 .ui.list .list > a.item:hover,
 .ui.list > a.item:hover {
-  color: #1fde95;
+  color: #003a62;
 }
 
 /* Linked Item Icons */
@@ -14466,12 +14466,12 @@ ol.ui.list ol li,
 .ui.list .list > .item a.header,
 .ui.list > .item a.header {
   cursor: pointer;
-  color: #1CC886 !important;
+  color: #002B49 !important;
 }
 
 .ui.list .list > .item a.header:hover,
 .ui.list > .item a.header:hover {
-  color: #1fde95 !important;
+  color: #003a62 !important;
 }
 
 /* Floated Content */
@@ -14647,7 +14647,7 @@ ol.ui.list ol li,
 
 .ui.inverted.list .list > a.item:hover,
 .ui.inverted.list > a.item:hover {
-  color: #1fde95;
+  color: #003a62;
 }
 
 /* Linking Content */
@@ -14657,7 +14657,7 @@ ol.ui.list ol li,
 }
 
 .ui.inverted.list .item a:not(.ui):hover {
-  color: #1fde95 !important;
+  color: #003a62 !important;
 }
 
 /*-------------------
@@ -17474,7 +17474,7 @@ ol.ui.horizontal.list li:before,
 }
 
 .ui.steps .step.active .title {
-  color: #1CC886;
+  color: #002B49;
 }
 
 .ui.ordered.steps .step.active:before,
@@ -17816,11 +17816,11 @@ ol.ui.horizontal.list li:before,
 /* Link */
 
 .ui.breadcrumb a {
-  color: #1CC886;
+  color: #002B49;
 }
 
 .ui.breadcrumb a:hover {
-  color: #1fde95;
+  color: #003a62;
 }
 
 /* Icon Divider */
@@ -26164,7 +26164,7 @@ Floated Menu / Item
 
 .ui.cards > .card > .content > a.header:hover,
 .ui.card > .content > a.header:hover {
-  color: #1fde95;
+  color: #003a62;
 }
 
 /* Meta */
@@ -26284,7 +26284,7 @@ Floated Menu / Item
 
 .ui.cards > .card > .extra a:not(.ui):hover,
 .ui.card > .extra a:not(.ui):hover {
-  color: #1fde95;
+  color: #003a62;
 }
 
 /*******************************
@@ -27059,7 +27059,7 @@ a.ui.card:hover,
 }
 
 .ui.comments .comment a.author:hover {
-  color: #1fde95;
+  color: #003a62;
 }
 
 /*--------------
@@ -27798,7 +27798,7 @@ a.ui.card:hover,
 }
 
 .ui.items > .item > .content > a.header:hover {
-  color: #1fde95;
+  color: #003a62;
 }
 
 /* Meta */
@@ -28029,7 +28029,7 @@ a.ui.card:hover,
 
 .ui.items a.item:hover .content .header,
 .ui.link.items > .item:hover .content .header {
-  color: #1fde95;
+  color: #003a62;
 }
 
 /*--------------
