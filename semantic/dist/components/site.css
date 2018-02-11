@@ -276,10 +276,9 @@ body .ui.inverted::-webkit-scrollbar-thumb:hover {
     width: 52px!important;
     margin: 8px auto !important;
   }
-  h1.ui.blue.header {
-    font-size: 3rem;
-  }
-  h2.ui.blue.header {
+  h1.ui.blue.header,
+  h2.ui.blue.header,
+  h2.ui.inverted.header {
     font-size: 2.25rem;
   }
   .bg-altcoins {
