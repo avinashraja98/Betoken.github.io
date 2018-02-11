@@ -302,4 +302,7 @@ body .ui.inverted::-webkit-scrollbar-thumb:hover {
   .kairo-token {
     margin-top: 64px!important;
   }
+  .ui.steps .step .title {
+    margin-top: 16px;
+  }
 }
