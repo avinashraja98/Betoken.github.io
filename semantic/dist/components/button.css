@@ -3707,3 +3707,8 @@
 .ui.black.button:hover {
   background-color: #373737;
 }
+.ui.basic.button {
+  webkit-box-shadow: 0px 8px 35px 0px rgba(0, 0, 0, 0.25);
+  -webkit-box-shadow: 0px 8px 35px 0px rgba(0, 0, 0, 0.25);
+          box-shadow: 0px 8px 35px 0px rgba(0, 0, 0, 0.25);
+}
