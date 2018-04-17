@@ -760,7 +760,7 @@ body .ui.inverted::-webkit-scrollbar-thumb:hover {
 *******************************/
 
 .header-menu {
-  padding-top: 16px;
+  padding-top: 16px!important;
 }
 
 .logo {
