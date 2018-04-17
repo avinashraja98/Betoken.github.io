@@ -202,7 +202,7 @@ body .ui.inverted::-webkit-scrollbar-thumb:hover {
 *******************************/
 
 .header-menu {
-  margin-top: 16px!important;
+  padding-top: 16px;
 }
 .logo {
   top: 14px;
@@ -257,10 +257,16 @@ body .ui.inverted::-webkit-scrollbar-thumb:hover {
   position: relative;
   width: 100%;
   background-image: url('themes/default/assets/images/bg-pattern-lines.svg');
-  background-position: center right;
+  background-position: top right;
   background-repeat: no-repeat;
 }
 .bg-betoken-logo {
+  position: absolute;
+  right: 0;
+  width: 438px;
+  top: 62px;
+}
+.bg-altcoins {
   position: absolute;
   right: 0;
   width: 768px;
@@ -314,6 +320,13 @@ input.form-control {
   color: #1da1f2;
 }
 @media screen and (max-width: 767px) {
+  .bg-pattern-lines {
+    position: relative;
+    width: 80%;
+    background-image: url('themes/default/assets/images/bg-pattern-lines.svg');
+    background-position: top right;
+    background-repeat: no-repeat;
+  }
   .ui.input {
     width: 100%!important;
   }
