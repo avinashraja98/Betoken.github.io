@@ -43,7 +43,7 @@
   margin: 2rem 0rem 0rem;
   font-size: 1rem;
   line-height: 1.5;
-  color: rgba(0, 0, 0, 0.87);
+  color: #8FA9B0;
 }
 
 /*--------------
@@ -547,13 +547,13 @@ a.ui.inverted.brown.header:hover {
 /*--- Grey ---*/
 
 .ui.grey.header {
-  color: #DDDDDD !important;
+  color: #8FA9B0 !important;
 }
 a.ui.grey.header:hover {
-  color: #eaeaea !important;
+  color: #9eb4bb !important;
 }
 .ui.grey.dividing.header {
-  border-bottom: 2px solid #DDDDDD;
+  border-bottom: 2px solid #8FA9B0;
 }
 
 /* Inverted */

@@ -253,6 +253,13 @@ body .ui.inverted::-webkit-scrollbar-thumb:hover {
   background-position: center right;
   background-repeat: no-repeat;
 }
+.bg-pattern-lines {
+  position: relative;
+  width: 100%;
+  background-image: url('themes/default/assets/images/bg-pattern-lines.svg');
+  background-position: center right;
+  background-repeat: no-repeat;
+}
 .bg-betoken-logo {
   position: absolute;
   right: 0;
@@ -266,7 +273,53 @@ body .ui.inverted::-webkit-scrollbar-thumb:hover {
 .ui.list > .item > i.icon {
   padding-right: 1.25em!important;
 }
+.ui.input {
+  width: 65%!important;
+}
+.block-request-access {
+  position: relative;
+  z-index: 2;
+  width: 400px;
+  max-width: 100%;
+  margin: 0 auto;
+  border-radius: 2px;
+  background: #fff;
+  border: 1px solid #d1dcdf;
+  height: 56px;
+  border-radius: 4px;
+}
+input.form-control {
+  display: inline-block;
+  float: left;
+  width: 50%;
+  height: 56px;
+  border: 0!important;
+  font-size: 1rem;
+  background: transparent!important;
+}
+.input-group-append {
+  margin: 12px 8px 0;
+}
+.form-control-cta {
+  -webkit-box-shadow: none!important;
+          box-shadow: none!important;
+}
+.telegram {
+  color: #0088cc;
+}
+.reddit {
+  color: #ff4500;
+}
+.twitter-btn {
+  color: #1da1f2;
+}
 @media screen and (max-width: 767px) {
+  .ui.input {
+    width: 100%!important;
+  }
+  .block-request-access {
+    width: 100%;
+  }
   .logo {
     top: 8px;
   }

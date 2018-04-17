@@ -961,16 +961,16 @@ a.ui.basic.brown.label:hover {
 
 .ui.grey.labels .label,
 .ui.grey.label {
-  background-color: #DDDDDD !important;
-  border-color: #DDDDDD !important;
+  background-color: #8FA9B0 !important;
+  border-color: #8FA9B0 !important;
   color: #FFFFFF !important;
 }
 
 /* Link */
 .ui.grey.labels .label:hover,
 a.ui.grey.label:hover {
-  background-color: #eaeaea !important;
-  border-color: #eaeaea !important;
+  background-color: #9eb4bb !important;
+  border-color: #9eb4bb !important;
   color: #FFFFFF !important;
 }
 
@@ -988,14 +988,14 @@ a.ui.grey.label:hover {
 /* Basic */
 .ui.basic.grey.label {
   background-color: #FFFFFF !important;
-  color: #DDDDDD !important;
-  border-color: #DDDDDD !important;
+  color: #8FA9B0 !important;
+  border-color: #8FA9B0 !important;
 }
 .ui.basic.grey.labels a.label:hover,
 a.ui.basic.grey.label:hover {
   background-color: #FFFFFF !important;
-  color: #eaeaea !important;
-  border-color: #eaeaea !important;
+  color: #9eb4bb !important;
+  border-color: #9eb4bb !important;
 }
 
 /*--- Black ---*/
