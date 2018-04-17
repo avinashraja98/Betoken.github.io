@@ -246,13 +246,6 @@ body .ui.inverted::-webkit-scrollbar-thumb:hover {
   padding-top: 292px;
   min-height: 825px;
 }
-.bg-altcoins {
-  position: relative;
-  width: 100%;
-  background-image: url('themes/default/assets/images/bg-altcoins.svg');
-  background-position: center right;
-  background-repeat: no-repeat;
-}
 .bg-pattern-lines {
   position: relative;
   width: 100%;
@@ -260,20 +253,17 @@ body .ui.inverted::-webkit-scrollbar-thumb:hover {
   background-position: top right;
   background-repeat: no-repeat;
 }
-.bg-betoken-logo {
+.bg-altcoins {
   position: absolute;
   right: 0;
   width: 438px;
   top: 62px;
 }
-.bg-altcoins {
+.bg-betoken-logo-footer {
   position: absolute;
   right: 0;
   width: 768px;
-  top: -48px;
   height: 768px;
-}
-.bg-betoken-logo-footer {
   top: 300px;
 }
 .ui.list > .item > i.icon {
@@ -320,6 +310,10 @@ input.form-control {
   color: #1da1f2;
 }
 @media screen and (max-width: 767px) {
+  .ui.massive.primary.button {
+    margin-bottom: 16px;
+    width: 100%;
+  }
   .ui.grid + .grid {
     margin-top: 0!important;
   }
@@ -347,13 +341,7 @@ input.form-control {
     font-size: 2.25rem;
   }
   .bg-altcoins {
-    background-position-x: left;
-    background-position-y: bottom;
-  }
-  .bg-betoken-logo {
-    width: auto;
-    top: 70px;
-    height: 500px;
+    visibility: hidden;
   }
   .bg-green {
     padding-top: 217px;
