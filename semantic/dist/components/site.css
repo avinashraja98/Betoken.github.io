@@ -355,6 +355,7 @@ input.form-control {
   }
   .bg-black-code {
     padding-top: 128px;
+    background-position: right top;
   }
   .ui.steps .step .title {
     margin-top: 16px;
