@@ -768,6 +768,15 @@ body .ui.inverted::-webkit-scrollbar-thumb:hover {
   top: 14px;
 }
 
+.logo-in-column {
+  width: 128px;
+  top: 10px;
+}
+
+#powered-by-kn {
+  margin-bottom: 24px;
+}
+
 .wrap-bg-color {
   position: relative;
   display: block;
@@ -889,6 +898,64 @@ input.form-control {
 
 .twitter-btn {
   color: #1da1f2;
+}
+
+.gitHub-btn {
+  color: #24292e;
+}
+
+.linkedin-btn {
+  color: #0084bf;
+}
+
+.how-does-it-work-section {
+  height: 708px;
+}
+
+.cup-text {
+  z-index: 2;
+  top: 60px;
+  right: -16px;
+}
+
+.cup-illustration {
+  z-index: 3;
+  width: 470px;
+  top: 64px;
+  right: 35px;
+}
+
+.passive-investor-text {
+  z-index: 2;
+  top: 125px;
+  right: -214px;
+}
+
+.man-illustration {
+  left: -183px;
+  top: 29px;
+  width: 452px;
+}
+
+.man-text {
+  display: inline-block;
+  width: 270px;
+  top: 14px;
+  position: relative;
+}
+
+.woman-illustration {
+  top: 200px;
+  left: -490px;
+  width: 400px;
+}
+
+.dark-color-contrast {
+  color: #f5f5f5;
+}
+
+.smart-contract-section {
+  top: 20px;
 }
 
 @media screen and (max-width: 767px) {
