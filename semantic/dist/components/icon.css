@@ -3318,3 +3318,15 @@ i.icon.times.rectangle.outline:before {
          Site Overrides
 *******************************/
 
+.metamask {
+  height: 24px!important;
+  line-height: 24px;
+  background-image: url('themes/default/assets/images/metamask.png');
+  background-size: 24px;
+}
+.ledger {
+  height: 24px!important;
+  line-height: 24px;
+  background-image: url('themes/default/assets/images/ledger.png');
+  background-size: 24px;
+}

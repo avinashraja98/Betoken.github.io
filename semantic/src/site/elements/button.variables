@@ -8,3 +8,25 @@
 @shadowBoxShadow: 0px 8px 35px 0px rgba(0,0,0,.25);
 @basicBackground: white;
 @basicBorderSize: 0;
+
+@orGap: 0em;
+@orHeight: 0;
+@orZIndex: 3;
+
+@orCircleDistanceToEdge: 1.5em;
+@orCircleSize: 1.5em;
+@orLineHeight: 1.5em;
+@orBoxShadow: none;
+
+@orVerticalOffset: -(@orCircleSize / 2);
+@orHorizontalOffset: -(@orCircleSize / 2);
+
+@orBackgroundColor: @white;
+@orTextShadow: none;
+@orTextStyle: normal;
+@orTextWeight: normal;
+@orTextColor: @lightTextColor;
+
+
+@orSpacerHeight: @verticalPadding;
+@orSpacerColor: transparent;

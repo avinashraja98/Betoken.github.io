@@ -306,7 +306,7 @@ input.form-control {
 }
 .form-control-cta {
   -webkit-box-shadow: none!important;
-          box-shadow: none!important;
+  box-shadow: none!important;
 }
 .telegram {
   color: #0088cc;
@@ -367,6 +367,9 @@ input.form-control {
 .smart-contract-section {
   top: 20px;
 }
+.kairo-token-section {
+  padding: 14em 0 0!important;
+}
 @media screen and (max-width: 767px) {
   .ui.massive.primary.button {
     margin-bottom: 16px;
@@ -413,5 +416,8 @@ input.form-control {
   }
   .ui.steps .step .title {
     margin-top: 16px;
+  }
+  .kairo-token-section {
+    padding: 4em 0 0!important;
   }
 }

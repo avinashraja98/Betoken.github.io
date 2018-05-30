@@ -25,3 +25,23 @@
   webkit-box-shadow: 0px 8px 35px 0px rgba(0,0,0,.25);
   box-shadow: 0px 8px 35px 0px rgba(0,0,0,.25);
 }
+.ui.continue-with.vertical.buttons{
+  webkit-box-shadow: 0px 8px 35px 0px rgba(0,0,0,.25);
+  box-shadow: 0px 8px 35px 0px rgba(0,0,0,.25);
+  border-radius: @absoluteBorderRadius;
+}
+.ui.continue-with.icon.button{
+  height: 56px;
+  line-height: 24px;
+  text-align: left;
+  background-color: white;
+  box-shadow: none!important;
+  webkit-box-shadow: none!important;
+}
+.ui.continue-with.border.icon.button{
+  border-bottom: 1px solid @borderColor;
+}
+.or.vertical{
+  margin: 0 auto;
+  line-height: 1.6em!important;
+}

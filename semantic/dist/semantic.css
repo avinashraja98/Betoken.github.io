@@ -958,6 +958,10 @@ input.form-control {
   top: 20px;
 }
 
+.kairo-token-section {
+  padding: 14em 0 0!important;
+}
+
 @media screen and (max-width: 767px) {
   .ui.massive.primary.button {
     margin-bottom: 16px;
@@ -1016,6 +1020,10 @@ input.form-control {
 
   .ui.steps .step .title {
     margin-top: 16px;
+  }
+
+  .kairo-token-section {
+    padding: 4em 0 0!important;
   }
 }
 /*!
@@ -2120,8 +2128,8 @@ input.form-control {
 
 .ui.buttons .or {
   position: relative;
-  width: 0.3em;
-  height: 2.375em;
+  width: 0em;
+  height: 0;
   z-index: 3;
 }
 
@@ -2134,16 +2142,16 @@ input.form-control {
   left: 50%;
   background-color: #FFFFFF;
   text-shadow: none;
-  margin-top: -0.84375em;
-  margin-left: -0.84375em;
-  width: 1.6875em;
-  height: 1.6875em;
-  line-height: 1.6875em;
+  margin-top: -0.75em;
+  margin-left: -0.75em;
+  width: 1.5em;
+  height: 1.5em;
+  line-height: 1.5em;
   color: rgba(0, 0, 0, 0.4);
   font-style: normal;
-  font-weight: bold;
-  -webkit-box-shadow: 0px 0px 0px 1px transparent inset;
-  box-shadow: 0px 0px 0px 1px transparent inset;
+  font-weight: normal;
+  -webkit-box-shadow: none;
+  box-shadow: none;
 }
 
 .ui.buttons .or[data-text]:before {
@@ -5238,6 +5246,32 @@ input.form-control {
   webkit-box-shadow: 0px 8px 35px 0px rgba(0, 0, 0, 0.25);
   -webkit-box-shadow: 0px 8px 35px 0px rgba(0, 0, 0, 0.25);
   box-shadow: 0px 8px 35px 0px rgba(0, 0, 0, 0.25);
+}
+
+.ui.continue-with.vertical.buttons {
+  webkit-box-shadow: 0px 8px 35px 0px rgba(0, 0, 0, 0.25);
+  -webkit-box-shadow: 0px 8px 35px 0px rgba(0, 0, 0, 0.25);
+  box-shadow: 0px 8px 35px 0px rgba(0, 0, 0, 0.25);
+  border-radius: 0.25rem;
+}
+
+.ui.continue-with.icon.button {
+  height: 56px;
+  line-height: 24px;
+  text-align: left;
+  background-color: white;
+  -webkit-box-shadow: none!important;
+  box-shadow: none!important;
+  webkit-box-shadow: none!important;
+}
+
+.ui.continue-with.border.icon.button {
+  border-bottom: 1px solid rgba(0, 0, 0, 0.07);
+}
+
+.or.vertical {
+  margin: 0 auto;
+  line-height: 1.6em!important;
 }
 /*!
  * # Semantic UI 2.2.14 - Container
@@ -12066,6 +12100,20 @@ i.icon.times.rectangle.outline:before {
 /*******************************
          Site Overrides
 *******************************/
+
+.metamask {
+  height: 24px!important;
+  line-height: 24px;
+  background-image: url('themes/default/assets/images/metamask.png');
+  background-size: 24px;
+}
+
+.ledger {
+  height: 24px!important;
+  line-height: 24px;
+  background-image: url('themes/default/assets/images/ledger.png');
+  background-size: 24px;
+}
 /*!
  * # Semantic UI 2.2.14 - Image
  * http://github.com/semantic-org/semantic-ui/
