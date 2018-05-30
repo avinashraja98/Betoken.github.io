@@ -1,0 +1,8 @@
+/*******************************
+    User Variable Overrides
+*******************************/
+@margin: 1.5rem auto;
+@highlightWidth: 2px;
+@highlightColor: @blue;
+@shadowWidth: 2px;
+@shadowColor: @blue;

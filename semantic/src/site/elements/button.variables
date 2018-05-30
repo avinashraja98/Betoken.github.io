@@ -1,0 +1,10 @@
+/*******************************
+    User Variable Overrides
+*******************************/
+/* Text */
+@textTransform: capitalize;
+@fontWeight: normal;
+/* Shadow */
+@shadowBoxShadow: 0px 8px 35px 0px rgba(0,0,0,.25);
+@basicBackground: white;
+@basicBorderSize: 0;

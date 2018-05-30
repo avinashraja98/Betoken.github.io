@@ -1,0 +1,7 @@
+/*******************************
+    User Variable Overrides
+*******************************/
+@subHeaderMargin: 2rem 0rem 0rem;
+@subHeaderLineHeight: 1.5;
+@headerMargin : 1rem 0em 1.5rem;
+@subHeaderColor: @grey;

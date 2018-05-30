@@ -52,10 +52,3 @@ tags
 # Packages
 node_modules/
 .tmp
-
-# folders
-semantic/tasks
-semantic/src
-
-# Ignore specific files #
-gulpfile.js

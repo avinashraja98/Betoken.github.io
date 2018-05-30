@@ -1,0 +1,162 @@
+/*******************************
+         Site Overrides
+*******************************/
+.header-menu{
+  padding-top: 16px!important;
+}
+.logo{
+  width: 192px;
+  top: 14px;
+}
+.wrap-bg-color{
+  position: relative;
+  display: block;
+}
+.bg-color{
+  position: relative;
+  z-index: 3;
+}
+.bg-green {
+  position: relative;
+  width: 100%;
+  background-size: cover;
+  background-image: url('themes/default/assets/images/homepage_bg_bottom.svg');
+  background-position: center top;
+  background-repeat: no-repeat;
+  padding-bottom: 140px;
+  margin: -180px 0 64px;
+  padding-top: 301px;
+  min-height: 820px;
+}
+.bg-green.footer {
+  background-position: center 111px;
+  background-repeat: no-repeat;
+  padding-bottom: 0px;
+  margin: -266px 0 0px;
+  padding-top: 370px;
+  min-height: 890px;
+}
+.bg-black-code {
+  position: relative;
+  width: 100%;
+  background-size: cover;
+  background-image: url('themes/default/assets/images/bg-black-code.svg');
+  background-position: center top;
+  background-repeat: no-repeat;
+  margin: 64px 0 64px;
+  padding-top: 292px;
+  min-height: 825px;
+}
+.bg-pattern-lines{
+  position: relative;
+  width: 100%;
+  background-image: url('themes/default/assets/images/bg-pattern-lines.svg');
+  background-position: top right;
+  background-repeat: no-repeat;
+}
+.bg-altcoins{
+  position: absolute;
+  right: 0;
+  width: 438px;
+  top: 62px;
+}
+.bg-betoken-logo-footer{
+  position: absolute;
+  right: 0;
+  width: 768px;
+  height: 768px;
+  top: 300px;
+}
+.ui.list>.item>i.icon{
+  padding-right: 1.25em!important;
+}
+
+.ui.input{
+  width: 65%!important;
+}
+.block-request-access {
+    position: relative;
+    z-index: 2;
+    width: 400px;
+    max-width: 100%;
+    margin: 0 auto;
+    border-radius: 2px;
+    background: #fff;
+    border: 1px solid #d1dcdf;
+    height: 56px;
+    border-radius: 4px;
+}
+input.form-control {
+    display: inline-block;
+    float: left;
+    width: 50%;
+    height: 56px;
+    border: 0!important;
+    font-size: 1rem;
+    background: transparent!important;
+}
+.input-group-append {
+  margin: 12px 8px 0;
+}
+.form-control-cta{
+  box-shadow: none!important;
+}
+.telegram{
+  color: #0088cc;
+}
+.facebook{
+  color: #3b5998;
+}
+.reddit{
+  color: #ff4500;
+}
+.twitter-btn{
+  color: #1da1f2;
+}
+
+@media screen and (max-width: 767px) {
+  .ui.massive.primary.button{
+    margin-bottom: 16px;
+    width: 100%;
+  }
+  .ui.grid+.grid{
+    margin-top: 0!important;
+  }
+  .bg-pattern-lines{
+    background-image:none;
+  }
+  .ui.input{
+    width: 100%!important;
+  }
+  .block-request-access {
+      width: 100%;
+  }
+  .logo{
+    top: 8px;
+  }
+  .segment.versus{
+    position: relative !important;
+    display: block!important;
+    width: 52px!important;
+    margin: 8px auto !important;
+  }
+  h1.ui.blue.header, h2.ui.blue.header, h2.ui.inverted.header {
+    font-size: 2.25rem;
+  }
+  .bg-altcoins{
+    visibility: hidden;
+  }
+  .bg-green {
+    padding-top: 217px;
+  }
+  .bg-green.footer {
+    min-height: 1100px;
+  }
+  .bg-black-code {
+    padding-top: 128px;
+    background-position: right top;
+  }
+  .ui.steps .step .title{
+    margin-top: 16px;
+  }
+}

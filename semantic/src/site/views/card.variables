@@ -1,0 +1,11 @@
+/*******************************
+    User Variable Overrides
+*******************************/
+/* Shadow */
+@shadowBoxShadow: 0px 8px 35px 0px rgba(0,0,0,.1);
+@borderShadow: 0px 8px 35px 0px rgba(0,0,0,.1);
+@linkHoverRaiseDistance: 2px;
+@linkHoverTransform: translateY(-@linkHoverRaiseDistance);
+@shadowHoverBoxShadow: 0px 10px 35px 0px rgba(0,0,0,.15);
+@headerFontWeight: bold;
+@headerFontSize: @relativeSmall;

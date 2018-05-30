@@ -1,0 +1,14 @@
+/*******************************
+         Site Overrides
+*******************************/
+.ui.divider:not(.vertical):not(.horizontal){
+  width: 64px;
+  border-radius: 2px;
+}
+.ui.divider.left:not(.vertical):not(.horizontal){
+  margin: 1.5rem 0;
+}
+.ui.divider.white:not(.vertical):not(.horizontal){
+  border-top: 2px solid white;
+  border-bottom: 2px solid white;
+}
