@@ -1,6 +1,6 @@
-
 <!DOCTYPE html>
 <html>
+
 <head>
   <!-- Standard Meta -->
   <meta charset="utf-8" />
@@ -16,16 +16,18 @@
   <script async src="https://www.googletagmanager.com/gtag/js?id=UA-116797881-1"></script>
   <script>
     window.dataLayer = window.dataLayer || [];
-    function gtag(){dataLayer.push(arguments);}
+    function gtag() { dataLayer.push(arguments); }
     gtag('js', new Date());
 
     gtag('config', 'UA-116797881-1');
   </script>
-  <script
-    src="https://code.jquery.com/jquery-3.1.1.min.js"
-    integrity="sha256-hVVnYaiADRTO2PzUGmuLJr8BLUSjGIZsDYGmIJLv2b8="
+  <script src="https://code.jquery.com/jquery-3.1.1.min.js" integrity="sha256-hVVnYaiADRTO2PzUGmuLJr8BLUSjGIZsDYGmIJLv2b8="
     crossorigin="anonymous"></script>
   <script src="semantic/dist/semantic.min.js"></script>
+
+  <script src="web3.min.js"></script>
+  <script src="checkWeb3.js"></script>
+
   <link rel="apple-touch-icon" sizes="180x180" href="semantic/dist/themes/default/assets/images/icons/apple-touch-icon.png">
   <link rel="icon" type="image/png" sizes="32x32" href="semantic/dist/themes/default/assets/images/icons/favicon-32x32.png">
   <link rel="icon" type="image/png" sizes="16x16" href="semantic/dist/themes/default/assets/images/icons/favicon-16x16.png">
@@ -36,94 +38,113 @@
   <meta name="msapplication-config" content="semantic/dist/themes/default/assets/images/icons/browserconfig.xml">
   <meta name="theme-color" content="#ffffff">
 </head>
+
 <body>
 
-<div class="bg-pattern-lines">
-  <!-- Page Contents -->
-  <div class="widescreen large screen computer only ui equal width centered column grid container header-menu">
-    <div class="five wide column">
-      <img class="ui image logo" src="semantic/dist/themes/default/assets/images/logo-1.svg" alt="Betoken logo">
+  <div class="bg-pattern-lines">
+    <!-- Page Contents -->
+    <div class="widescreen large screen computer only ui equal width centered column grid container header-menu">
+      <div class="five wide column">
+        <img class="ui image logo" src="semantic/dist/themes/default/assets/images/logo-1.svg" alt="Betoken logo">
+      </div>
+      <div class="column right aligned ">
+        <span class="ui basic segment">
+          <a class="ui" href="https://github.com/Betoken/Whitepaper" target="_blank">WHITE PAPER</a>
+        </span>
+        <span class="ui basic segment">
+          <a class="ui" href="https://github.com/Betoken/documents/tree/master/Incentivized%20Meritocracies" target="_blank">FORMAL ANALYSIS&nbsp;&nbsp;&nbsp;</span>
+        <a class="ui circular large basic icon button" href="https://t.me/betokenfund" target="_blank">
+          <i class="telegram icon"></i>
+        </a>
+        <a class="ui circular large basic icon button" href="https://twitter.com/betokenfund" target="_blank">
+          <i class="twitter twitter-btn icon"></i>
+        </a>
+        <a class="ui circular large basic icon button" href="https://www.facebook.com/betokenfund/" target="_blank">
+          <i class="facebook icon"></i>
+        </a>
+        <a class="ui circular large basic icon button" href="https://www.reddit.com/r/betoken/" target="_blank">
+          <i class="reddit icon"></i>
+        </a>
+        <a class="ui circular large basic icon button" href="https://medium.com/betoken" target="_blank">
+          <i class="medium icon"></i>
+        </a>
+        <a class="ui circular large black icon button" href="https://github.com/Betoken" target="_blank">
+          <i class="github inverted icon"></i>
+        </a>
+      </div>
     </div>
-    <div class="column right aligned ">
-      <span class="ui basic segment"><a class="ui" href="https://github.com/Betoken/Whitepaper" target="_blank">WHITE PAPER</a></span>
-      <span class="ui basic segment"><a class="ui" href="https://github.com/Betoken/documents/tree/master/Incentivized%20Meritocracies" target="_blank">FORMAL ANALYSIS&nbsp;&nbsp;&nbsp;</span>
-      <a class="ui circular large basic icon button" href="https://t.me/betokenfund" target="_blank">
-        <i class="telegram icon"></i>
-      </a>
-      <a class="ui circular large basic icon button" href="https://twitter.com/betokenfund" target="_blank">
-        <i class="twitter twitter-btn icon"></i>
-      </a>
-      <a class="ui circular large basic icon button" href="https://www.facebook.com/betokenfund/" target="_blank">
-        <i class="facebook icon"></i>
-      </a>
-      <a class="ui circular large basic icon button" href="https://www.reddit.com/r/betoken/" target="_blank">
-        <i class="reddit icon"></i>
-      </a>
-      <a class="ui circular large basic icon button" href="https://medium.com/betoken" target="_blank">
-        <i class="medium icon"></i>
-      </a>
-      <a class="ui circular large black icon button" href="https://github.com/Betoken" target="_blank">
-        <i class="github inverted icon"></i>
-      </a>
+    <div class="mobile tablet only ui equal width centered column grid container header-menu">
+      <div class="column">
+        <img class="ui image logo" src="semantic/dist/themes/default/assets/images/logo-1.svg">
+      </div>
+      <div class="nine wide column right aligned ">
+        <a class="ui circular small basic icon button" href="https://t.me/betokenfund" target="_blank">
+          <i class="telegram icon"></i>
+        </a>
+        <a class="ui circular small basic icon button" href="https://twitter.com/betokenfund" target="_blank">
+          <i class="twitter twitter-btn icon"></i>
+        </a>
+        <a class="ui circular small basic icon button" href="https://www.reddit.com/r/betoken/" target="_blank">
+          <i class="reddit icon"></i>
+        </a>
+      </div>
     </div>
-  </div>
-  <div class="mobile tablet only ui equal width centered column grid container header-menu">
-    <div class="column">
-      <img class="ui image logo" src="semantic/dist/themes/default/assets/images/logo-1.svg">
-    </div>
-    <div class="nine wide column right aligned ">
-      <a class="ui circular small basic icon button" href="https://t.me/betokenfund" target="_blank">
-        <i class="telegram icon"></i>
-      </a>
-      <a class="ui circular small basic icon button" href="https://twitter.com/betokenfund" target="_blank">
-        <i class="twitter twitter-btn icon"></i>
-      </a>
-      <a class="ui circular small basic icon button" href="https://www.reddit.com/r/betoken/" target="_blank">
-        <i class="reddit icon"></i>
-      </a>
-    </div>
-  </div>
-  <!-- CTA hero -->
-  <div class="ui hidden divider"></div>
-  <div class="ui hidden divider"></div>
-  <div class="ui center aligned text container">
-    <h1 class="ui blue header">
-      Everyone Deserves Great Investment Opportunities
-      <div class="sub header">Betoken is a portfolio of crypto-assets managed by a true meritocracy</div>
-    </h1>
-    <img id="powered-by-kn" src="semantic/dist/themes/default/assets/images/powered-by-kn.png" width="143" alt="kyber Network logo"/>
-    <p><b>To invest now 👇</b></p>
-    <div class="ui continue-with vertical buttons">
-      <button class="ui continue-with border icon button"><i class="metamask icon"></i> DOWNLOAD METAMASK <span data-inverted="" data-tooltip="Stuff about MM. Where to get it." data-position="top left"><i class="grey info icon"></i></span></button>
-      <div class="or vertical" data-text="or"></div>
-      <button class="ui continue-with icon button"><i class="ledger icon"></i> CONTINUE WITH LEDGER <span data-inverted="" data-tooltip="Stuff about ledger. Where to buy it." data-position="bottom left"><i class="grey info icon"></i></span></button>
-    </div>
-    <div class="ui tiny header">
-      <a href="https://t.me/betokenfund" target="_blank">Join our community on Telegram <i class="large telegram icon"></i></a>
-    </div>
+    <!-- CTA hero -->
+    <div class="ui hidden divider"></div>
+    <div class="ui hidden divider"></div>
+    <div class="ui center aligned text container">
+      <h1 class="ui blue header">
+        Everyone Deserves Great Investment Opportunities
+        <div class="sub header">Betoken is a portfolio of crypto-assets managed by a true meritocracy</div>
+      </h1>
+      <img id="powered-by-kn" src="semantic/dist/themes/default/assets/images/powered-by-kn.png" width="143" alt="kyber Network logo"
+      />
+      <p>
+        <b>To invest now 👇</b>
+      </p>
+      <div class="ui continue-with vertical buttons">
+        <button class="ui continue-with border icon button" onclick="checkWeb3()">
+          <i class="metamask icon"></i> DOWNLOAD METAMASK
+          <span data-inverted="" data-tooltip="Stuff about MM. Where to get it." data-position="top left">
+            <i class="grey info icon"></i>
+          </span>
+        </button>
+        <div class="or vertical" data-text="or"></div>
+        <button class="ui continue-with icon button">
+          <i class="ledger icon"></i> CONTINUE WITH LEDGER
+          <span data-inverted="" data-tooltip="Stuff about ledger. Where to buy it." data-position="bottom left">
+            <i class="grey info icon"></i>
+          </span>
+        </button>
+      </div>
+      <div class="ui tiny header">
+        <a href="https://t.me/betokenfund" target="_blank">Join our community on Telegram
+          <i class="large telegram icon"></i>
+        </a>
+      </div>
 
-    <!--End mc_embed_signup-->
-    <div class="ui hidden divider"></div>
-    <div class="ui fluid image">
-      <img src="semantic/dist/themes/default/assets/images/macbook.png" alt="Betoken user interface"/>
+      <!--End mc_embed_signup-->
+      <div class="ui hidden divider"></div>
+      <div class="ui fluid image">
+        <img src="semantic/dist/themes/default/assets/images/macbook.png" alt="Betoken user interface" />
+      </div>
+      <div class="ui hidden divider"></div>
+      <div class="ui hidden divider"></div>
     </div>
-    <div class="ui hidden divider"></div>
-    <div class="ui hidden divider"></div>
   </div>
-</div>
 
-<!-- Hedge funds vs Betoken -->
-<div class="wrap-bg-color">
-  <div class="ui center aligned text container bg-color">
-    <h2 class="ui blue header">
-      Meritocracy + Ethereum = $$$
-      <div class="ui divider"></div>
-    </h2>
-    <div class="ui hidden divider"></div>
+  <!-- Hedge funds vs Betoken -->
+  <div class="wrap-bg-color">
+    <div class="ui center aligned text container bg-color">
+      <h2 class="ui blue header">
+        Meritocracy + Ethereum = $$$
+        <div class="ui divider"></div>
+      </h2>
+      <div class="ui hidden divider"></div>
+    </div>
+    <img class="bg-altcoins" src="semantic/dist/themes/default/assets/images/bg-altcoins.svg" alt="bg-altcoins" />
   </div>
-  <img class="bg-altcoins" src="semantic/dist/themes/default/assets/images/bg-altcoins.svg" alt="bg-altcoins"/>
-</div>
-<!-- Values -->
+  <!-- Values -->
 
   <div class="ui stackable centered column grid text container bg-color">
     <div class="middle aligned row">
@@ -175,27 +196,33 @@
       <div class="column">
         <img class="ui image" src="semantic/dist/themes/default/assets/images/icon-temple.svg">
         <h3 class="ui header inverted">Open</h3>
-        <p>Anyone can choose to invest in the fund, and anyone can make investment decisions to win Kairo — Betoken's internal token that determines control over fund assets. All you need is an Ethereum account. There's no minimum investment, no need for invitations, and no wealth requirements.
-          This allows Betoken to tap into capital and talent that traditional hedge funds can't utilize.</p>
+        <p>Anyone can choose to invest in the fund, and anyone can make investment decisions to win Kairo — Betoken's internal
+          token that determines control over fund assets. All you need is an Ethereum account. There's no minimum investment,
+          no need for invitations, and no wealth requirements. This allows Betoken to tap into capital and talent that traditional
+          hedge funds can't utilize.</p>
       </div>
       <div class="column">
         <img class="ui image" src="semantic/dist/themes/default/assets/images/icon-geek.svg">
         <h3 class="ui header inverted">Meritocratic</h3>
-        <p>Betoken allows anyone to make investment decisions for the fund and be rewarded for turning in profit. Individuals who make better decisions gain a bigger say in future investment decisions by winning Kairo tokens. More Kairo = More money you can manage.</p>
+        <p>Betoken allows anyone to make investment decisions for the fund and be rewarded for turning in profit. Individuals
+          who make better decisions gain a bigger say in future investment decisions by winning Kairo tokens. More Kairo
+          = More money you can manage.</p>
       </div>
       <div class="column">
         <img class="ui image" src="semantic/dist/themes/default/assets/images/icon-sir.svg">
         <h3 class="ui header inverted">Decentralized and Trustless</h3>
-        <p>Betoken is a completely decentralized application running on the Ethereum blockchain. This means you don't have to trust us or anyone else in the fund, you only need to trust our code, which can be verified by anyone.</p>
+        <p>Betoken is a completely decentralized application running on the Ethereum blockchain. This means you don't have to
+          trust us or anyone else in the fund, you only need to trust our code, which can be verified by anyone.</p>
       </div>
     </div>
   </div>
-<!-- How does it work -->
+  <!-- How does it work -->
   <div class="ui center aligned text container">
     <h2 class="ui blue header">
       How Betoken Works
       <div class="ui divider"></div>
-      <div class="sub header">Betoken uses a one-of-a-kind <a href="https://github.com/Betoken/documents/tree/master/Incentivized%20Meritocracies" target="_blank">iMeritocracy</a> (Incentivized Meritocracy) to make investment decisions.</div>
+      <div class="sub header">Betoken uses a one-of-a-kind
+        <a href="https://github.com/Betoken/documents/tree/master/Incentivized%20Meritocracies" target="_blank">iMeritocracy</a> (Incentivized Meritocracy) to make investment decisions.</div>
     </h2>
     <div class="ui hidden divider"></div>
   </div>
@@ -212,7 +239,10 @@
       <div class="column">
         <div class="ui right aligned basic segment cup-illustration">
           <img class="ui right floated image" src="semantic/dist/themes/default/assets/images/cup-illustration-1.svg">
-          <p><strong>If you staked KRO and turned in profits, you’ll win more Kairo; if you lost the fund's money, you'll lose Kairo. More Kairo means more income and more control over investment decisions.</strong></p>
+          <p>
+            <strong>If you staked KRO and turned in profits, you’ll win more Kairo; if you lost the fund's money, you'll lose Kairo.
+              More Kairo means more income and more control over investment decisions.</strong>
+          </p>
         </div>
         <div class="ui left aligned secondary compact segment cup-text">
           <span>During the last 24h of each investment cycle, redeem your commission based on how much Kairo you have.</span>
@@ -228,12 +258,16 @@
         <div class="ui left aligned basic segment man-illustration">
           <img class="ui middle aligned image" src="semantic/dist/themes/default/assets/images/man-illustration-1.svg">
           <span class="man-text">
-            <strong>Invest in Betoken by depositing ETH or ERC20 tokens to buy Betoken's shares, or burn your shares to redeem your money. This 24h phase is open at the beginning of each month to onboard new user.</strong>
+            <strong>Invest in Betoken by depositing ETH or ERC20 tokens to buy Betoken's shares, or burn your shares to redeem your
+              money. This 24h phase is open at the beginning of each month to onboard new user.</strong>
           </span>
         </div>
         <div class="ui center aligned basic segment woman-illustration">
           <img class="ui middle aligned image" src="semantic/dist/themes/default/assets/images/woman-illustration-1.svg">
-          <p><strong>You can influence the fund’s portfolio by staking Kairo tokens (KRO) - our control token - to buy & sell cryptoassets during a 27 days period.</strong></p>
+          <p>
+            <strong>You can influence the fund’s portfolio by staking Kairo tokens (KRO) - our control token - to buy & sell cryptoassets
+              during a 27 days period.</strong>
+          </p>
         </div>
       </div>
     </div>
@@ -250,27 +284,31 @@
         <div class="step">
           <img class="ui image" src="semantic/dist/themes/default/assets/images/man-illustration-1.svg">
           <div class="content">
-            <div class="title">Invest in Betoken by depositing ETH or ERC20 tokens to buy Betoken's shares, or burn your shares to redeem your money. This 24h phase is open at the beginning of each month to onboard new user. </div>
+            <div class="title">Invest in Betoken by depositing ETH or ERC20 tokens to buy Betoken's shares, or burn your shares to redeem your
+              money. This 24h phase is open at the beginning of each month to onboard new user. </div>
           </div>
         </div>
         <div class="step">
           <img class="ui image" src="semantic/dist/themes/default/assets/images/woman-illustration-1.svg">
           <div class="content">
-            <div class="title">You can influence the fund’s portfolio by staking Kairo tokens (KRO) - our control token - to buy & sell cryptoassets during a 27 days period.</div>
+            <div class="title">You can influence the fund’s portfolio by staking Kairo tokens (KRO) - our control token - to buy & sell cryptoassets
+              during a 27 days period.</div>
             <div class="description">There is no obligation to make decisions. You can trust the community to decide for you on what to invest in.</div>
           </div>
         </div>
         <div class="step">
           <img class="ui image" src="semantic/dist/themes/default/assets/images/cup-illustration-1.svg">
           <div class="content">
-            <div class="title">If you staked KRO and turned in profits, you’ll win more Kairo; if you lost the fund's money, you'll lose Kairo. More Kairo means more income and more control over investment decisions. During the last 24h of each investment cycle, redeem your commission based on how much Kairo you have.</div>
+            <div class="title">If you staked KRO and turned in profits, you’ll win more Kairo; if you lost the fund's money, you'll lose Kairo.
+              More Kairo means more income and more control over investment decisions. During the last 24h of each investment
+              cycle, redeem your commission based on how much Kairo you have.</div>
           </div>
         </div>
       </div>
     </div>
   </div>
 
-<!-- Kairo token -->
+  <!-- Kairo token -->
   <div class="ui two column stackable grid container kairo-token-section">
     <div class="column">
       <img src="semantic/dist/themes/default/assets/images/kairo-token-1.svg" class="ui circular tiny image">
@@ -279,26 +317,38 @@
         <div class="ui divider left"></div>
         <div class="sub header">Read our whitepaper and check our research 👇.</div>
       </h2>
-      <a class="ui massive primary button" href="https://github.com/Betoken/Whitepaper" target="_blank"><i class="file outline icon"></i> WHITE PAPER</a>
-      <a class="ui massive primary white button" href="https://github.com/Betoken/documents/tree/master/Incentivized%20Meritocracies" target="_blank" title="Betoken's GitHub repo"><i class="file outline icon"></i> FORMAL ANALYSIS</a>
+      <a class="ui massive primary button" href="https://github.com/Betoken/Whitepaper" target="_blank">
+        <i class="file outline icon"></i> WHITE PAPER</a>
+      <a class="ui massive primary white button" href="https://github.com/Betoken/documents/tree/master/Incentivized%20Meritocracies"
+        target="_blank" title="Betoken's GitHub repo">
+        <i class="file outline icon"></i> FORMAL ANALYSIS</a>
     </div>
     <div class="column">
       <p></p>
-      <p>The control over the fund's assets is denominated by Kairo tokens. During every investment cycle, each participant buys assets for the fund by staking Kairo proportional to the size of the purchase. (e.g. 'Stake 10 Kairo to buy 10 OMG tokens')</p>
-      <p>After they sell an asset they invested in for the fund, the staker wins Kairo tokens proportional to the ROI (return on investment), or lose Kairo if the ROI was negative.</p>
-      <p>Over time, the control over fund assets flows to the best investors, a win-win for both the performance of the fund as well as the managers. Moreover, a proportion of profits is distributed to Kairo token holders every month, providing additional value to the token.</p>
+      <p>The control over the fund's assets is denominated by Kairo tokens. During every investment cycle, each participant
+        buys assets for the fund by staking Kairo proportional to the size of the purchase. (e.g. 'Stake 10 Kairo to buy
+        10 OMG tokens')</p>
+      <p>After they sell an asset they invested in for the fund, the staker wins Kairo tokens proportional to the ROI (return
+        on investment), or lose Kairo if the ROI was negative.</p>
+      <p>Over time, the control over fund assets flows to the best investors, a win-win for both the performance of the fund
+        as well as the managers. Moreover, a proportion of profits is distributed to Kairo token holders every month, providing
+        additional value to the token.</p>
     </div>
   </div>
 
-<!-- Smart Contract Security -->
+  <!-- Smart Contract Security -->
   <div class="bg-black-code ">
     <div class="ui two column stackable grid container bg-color">
       <div class="column"></div>
       <div class="column dark-color-contrast smart-contract-section">
         <h2 class="ui inverted header">Everything Runs on Smart Contracts</h2>
         <div class="ui divider left white"></div>
-        <p>The entire Betoken fund is operated by a set of smart conrtracts on the Ethereum blockchain. Immutable and transparent code & parameters means you don't need to worry about hidden clauses, extra fees, or any other fishy business. We hide nothing from you.</p>
-        <p>Investment decisions are automatically carried out using Kyber Network, a decentralized exchange for ERC20 tokens. They don't charge any fees, a great plus for our investors. They operate solely on smart contracts as well, so the exchange process is also transparent.</p>
+        <p>The entire Betoken fund is operated by a set of smart conrtracts on the Ethereum blockchain. Immutable and transparent
+          code & parameters means you don't need to worry about hidden clauses, extra fees, or any other fishy business.
+          We hide nothing from you.</p>
+        <p>Investment decisions are automatically carried out using Kyber Network, a decentralized exchange for ERC20 tokens.
+          They don't charge any fees, a great plus for our investors. They operate solely on smart contracts as well, so
+          the exchange process is also transparent.</p>
         <div class="ui hidden divider"></div>
         <div class="ui tiny inverted header">Check our code 👇</div>
         <a class="ui circular massive black icon button" href="https://github.com/Betoken" target="_blank" title="Betoken's GitHub repo">
@@ -308,9 +358,10 @@
     </div>
   </div>
 
-<!-- Roadmap -->
+  <!-- Roadmap -->
   <div class="wrap-bg-color">
-    <img class="bg-betoken-logo-footer" src="semantic/dist/themes/default/assets/images/betoken-logo-grey.svg" alt="bg-betoken-logo"/>
+    <img class="bg-betoken-logo-footer" src="semantic/dist/themes/default/assets/images/betoken-logo-grey.svg" alt="bg-betoken-logo"
+    />
 
     <div class="ui grid container">
       <div class="widescreen large screen only column"></div>
@@ -381,7 +432,7 @@
   <div class="ui hidden divider"></div>
   <div class="ui hidden divider"></div>
   <div class="ui hidden divider"></div>
-<!-- Team -->
+  <!-- Team -->
   <div class="ui container bg-color">
     <h2 class="ui center aligned blue header">Our Team</h2>
     <div class="ui divider"></div>
@@ -390,9 +441,15 @@
       <div class="card">
         <div class="content">
 
-          <a href="https://twitter.com/boredGenius" target="_blank"><i class="right floated large twitter icon twitter-btn"></i></a>
-          <a href="https://github.com/ZeframLou" target="_blank"><i class="right floated large github icon gitHub-btn"></i></a>
-          <a href="https://www.linkedin.com/in/zebangliu/" target="_blank"><i class="right floated large linkedin icon linkedin-btn"></i></a>
+          <a href="https://twitter.com/boredGenius" target="_blank">
+            <i class="right floated large twitter icon twitter-btn"></i>
+          </a>
+          <a href="https://github.com/ZeframLou" target="_blank">
+            <i class="right floated large github icon gitHub-btn"></i>
+          </a>
+          <a href="https://www.linkedin.com/in/zebangliu/" target="_blank">
+            <i class="right floated large linkedin icon linkedin-btn"></i>
+          </a>
           <img class="left floated ui mini circular image" src="semantic/dist/themes/default/assets/images/zefram.png">
           <div class="header">
             Zefram Lou
@@ -401,15 +458,22 @@
             Lead Developer
           </div>
           <div class="description">
-            Zefram is the cofounder and lead developer of Betoken. He is in charge of everything blockchain. He currently studies Computer Science at UC San Diego. He is passionate about crypto-economics and mechanism design.
+            Zefram is the cofounder and lead developer of Betoken. He is in charge of everything blockchain. He currently studies Computer
+            Science at UC San Diego. He is passionate about crypto-economics and mechanism design.
           </div>
         </div>
       </div>
       <div class="card">
         <div class="content">
-          <a href="https://twitter.com/skrishnan99" target="_blank"><i class="right floated large twitter icon twitter-btn"></i></a>
-          <a href="https://github.com/skrishnan99" target="_blank"><i class="right floated large github icon gitHub-btn"></i></a>
-          <a href="https://www.linkedin.com/in/surya-k-84a421101/" target="_blank"><i class="right floated large linkedin icon linkedin-btn"></i></a>
+          <a href="https://twitter.com/skrishnan99" target="_blank">
+            <i class="right floated large twitter icon twitter-btn"></i>
+          </a>
+          <a href="https://github.com/skrishnan99" target="_blank">
+            <i class="right floated large github icon gitHub-btn"></i>
+          </a>
+          <a href="https://www.linkedin.com/in/surya-k-84a421101/" target="_blank">
+            <i class="right floated large linkedin icon linkedin-btn"></i>
+          </a>
           <img class="left floated ui mini circular image" src="semantic/dist/themes/default/assets/images/surya.png">
           <div class="header">
             Surya Krishnan
@@ -418,15 +482,22 @@
             Frontend Developer
           </div>
           <div class="description">
-            Surya is the cofounder and frontend developer of Betoken. Currently, he studies computer science at UC San Diego and Surya's goal is to build technology that enables people to realize their ideas.
+            Surya is the cofounder and frontend developer of Betoken. Currently, he studies computer science at UC San Diego and Surya's
+            goal is to build technology that enables people to realize their ideas.
           </div>
         </div>
       </div>
       <div class="card">
         <div class="content">
-          <a href="https://twitter.com/guillaumpalayer" target="_blank"><i class="right floated large twitter icon twitter-btn"></i></a>
-          <a href="https://github.com/guillaumepalayer" target="_blank"><i class="right floated large github icon gitHub-btn"></i></a>
-          <a href="https://www.linkedin.com/in/gpalayer/" target="_blank"><i class="right floated large linkedin icon linkedin-btn"></i></a>
+          <a href="https://twitter.com/guillaumpalayer" target="_blank">
+            <i class="right floated large twitter icon twitter-btn"></i>
+          </a>
+          <a href="https://github.com/guillaumepalayer" target="_blank">
+            <i class="right floated large github icon gitHub-btn"></i>
+          </a>
+          <a href="https://www.linkedin.com/in/gpalayer/" target="_blank">
+            <i class="right floated large linkedin icon linkedin-btn"></i>
+          </a>
           <img class="left floated ui mini circular image" src="semantic/dist/themes/default/assets/images/guillaume.jpg">
           <div class="header">
             Guillaume Palayer
@@ -435,28 +506,42 @@
             Designer
           </div>
           <div class="description">
-            Guillaume is the cofounder of Betoken. His mission is to design and code the front end experience of the dApp. He's also an user researcher passionate by the token economy and the decentralized Web.
+            Guillaume is the cofounder of Betoken. His mission is to design and code the front end experience of the dApp. He's also
+            an user researcher passionate by the token economy and the decentralized Web.
           </div>
         </div>
       </div>
     </div>
   </div>
 
-<!-- CTA footer -->
+  <!-- CTA footer -->
   <div class="bg-green footer">
     <div class="ui center aligned text container bg-color">
       <h2 class="ui inverted header">
         The Future Of Hedge Funds
         <div class="ui white divider"></div>
-        <div class="sub header">No restrictions. No minimum investment. No license needed.<br>To invest now 👇.</div>
+        <div class="sub header">No restrictions. No minimum investment. No license needed.
+          <br>To invest now 👇.</div>
       </h2>
       <div class="ui continue-with vertical buttons">
-        <button class="ui continue-with border icon button"><i class="metamask icon"></i> DOWNLOAD METAMASK <span data-inverted="" data-tooltip="Stuff about MM. Where to get it." data-position="top left"><i class="grey info icon"></i></span></button>
+        <button class="ui continue-with border icon button">
+          <i class="metamask icon"></i> DOWNLOAD METAMASK
+          <span data-inverted="" data-tooltip="Stuff about MM. Where to get it." data-position="top left">
+            <i class="grey info icon"></i>
+          </span>
+        </button>
         <div class="or vertical" data-text="or"></div>
-        <button class="ui continue-with icon button"><i class="ledger icon"></i> CONTINUE WITH LEDGER <span data-inverted="" data-tooltip="Stuff about ledger. Where to buy it." data-position="bottom left"><i class="grey info icon"></i></span></button>
+        <button class="ui continue-with icon button">
+          <i class="ledger icon"></i> CONTINUE WITH LEDGER
+          <span data-inverted="" data-tooltip="Stuff about ledger. Where to buy it." data-position="bottom left">
+            <i class="grey info icon"></i>
+          </span>
+        </button>
       </div>
       <div class="ui hidden divider"></div>
-      <p class="dark-color-contrast"><b>Stay tuned</b></p>
+      <p class="dark-color-contrast">
+        <b>Stay tuned</b>
+      </p>
       <a class="ui circular large basic icon button" href="https://t.me/betokenfund" target="_blank">
         <i class="telegram icon"></i>
       </a>
@@ -476,9 +561,11 @@
         <i class="github inverted icon"></i>
       </a>
       <div class="ui hidden divider"></div>
-      <p>Contact us at <a href="mailto:hello@betoken.fund" class="dark-color-contrast">hello@betoken.fund</a> / Made by 🤖 in California & France.</p>
+      <p>Contact us at
+        <a href="mailto:hello@betoken.fund" class="dark-color-contrast">hello@betoken.fund</a> / Made by 🤖 in California & France.</p>
       <div class="ui hidden divider"></div>
     </div>
   </div>
 </body>
+
 </html>
