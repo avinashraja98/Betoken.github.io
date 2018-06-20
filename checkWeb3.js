@@ -1,4 +1,6 @@
 var hasWeb3 = false;
+var hasLogin = false;
+var networkName;
 
 var userAddress = "";
 
@@ -30,8 +32,20 @@ function checkAccount() {
       } else {
         web3.eth.defaultAccount = res[0];
         userAddress = res[0];
+        hasLogin = true;
         alert("ACCOUNT FOUND, ADDRESS:" + userAddress);
+        correctNetwork();
       }
     });
   }
+}
+
+function correctNetwork() {
+  web3.version.getNetwork((err, netId) => {
+    if (netId != 4) {
+      alert("Switch to Rnkeby test network");
+    } else {
+      window.location.replace("app");
+    }
+  });
 }
